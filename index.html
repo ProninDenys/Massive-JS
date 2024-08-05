@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Massive JS</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Shopping List</h1>
+
+    <div id="shopping-list"></div>
+
+    <h2>Buy Product</h2>
+    <input type="text" id="product-name" placeholder="Enter product name">
+    <button onclick="buyProductHandler()">Buy Product</button>
+
+    <h2>Add Product</h2>
+    <input type="text" id="new-product-name" placeholder="Enter product name">
+    <input type="number" id="new-product-quantity" placeholder="Enter quantity">
+    <input type="number" id="new-product-price" placeholder="Enter price per unit">
+    <button onclick="addProductHandler()">Add Product</button>
+
+    <h2>Remove Product</h2>
+    <input type="text" id="remove-product-name" placeholder="Enter product name">
+    <button onclick="removeProductHandler()">Remove Product</button>
+
+    <h2>Total Cost of Bought Products</h2>
+    <div id="total-cost"></div>
+
+
+    <script src="index.js"></script>
+  </body>
 </html>
